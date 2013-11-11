@@ -17,7 +17,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Echo">
-                <param name="android-package" value="fr.nconcepts.echo"/>
+                <param name="android-package" value="fr.nconcepts.echo.Echo"/>
             </feature>
         </config-file>
  
