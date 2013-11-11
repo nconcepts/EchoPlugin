@@ -1,4 +1,4 @@
-package fr.nconcepts.echo;
+package fr.nconcepts.plugin;
  
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -7,13 +7,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 public class Echo extends CordovaPlugin {
-   public static final String ECHO = "echo";
+   public static final String SEND_ECHO = "sendEcho";
    
    @Override
    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
  
        try {
-          if (ECHO.equals(action)) {
+          if (SEND_ECHO.equals(action)) {
              JSONObject arg_object = args.getJSONObject(0);
 				   
 		     arg_object.getString("message");
