@@ -21,6 +21,6 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/Echo.java" target-dir="src/fr/nconcepts/echo" />     
+        <source-file src="src/Echo.java" target-dir="src/fr/nconcepts/echo" />     
      </platform>         
 </plugin>
