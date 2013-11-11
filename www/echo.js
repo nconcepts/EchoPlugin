@@ -1,5 +1,5 @@
 var echo = {
-    createEvent: function(message) {
+    createEvent: function(message, successCallback, errorCallback) {
         cordova.exec(
             successCallback, // success callback function
             errorCallback, // error callback function

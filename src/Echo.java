@@ -16,9 +16,9 @@ public class Echo extends CordovaPlugin {
           if (ECHO.equals(action)) {
              JSONObject arg_object = args.getJSONObject(0);
 				   
-		     arg_object.getString("message")
+		     arg_object.getString("message");
 				   
-             callbackContext.success();
+             callbackContext.success(arg_object.getString("message"));
              return true;
           }
           callbackContext.error("Invalid action");
